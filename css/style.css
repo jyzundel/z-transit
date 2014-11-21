@@ -1,0 +1,239 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #333333;
+     font-size: 14px;
+     line-height: 1.4;
+     font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+a{
+     text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: #333333;
+     height: 40px; 
+     color:#dedede;
+     font-size:17px; 
+}
+
+#magicstuff{
+     padding-top: 10px;
+}
+
+#canvas{
+     display: block;
+}
+
+#magicmonitor{
+     position:  fixed;
+     width: 100%;
+     bottom: 30px;
+     min-height: 40px;
+     border-top: 1px solid #dedede;
+     background: rgba( 255, 255, 255, 0.8 );
+}
+
+#status{
+     position: fixed;
+     bottom: 0px;
+     left: 0px;
+     height: 20px;
+     padding: 5px 0px;
+     background-color: rgba(0, 0, 0, 0.3);
+     width: 100%;
+}
+
+#controls{
+     float: left;
+     margin-left: 10px;
+}
+
+#truckcount{
+     float: right;
+     margin-right: 10px;
+}
+
+footer {
+}
+
+/******************************************
+/* TOP NAVIGATION
+/*******************************************/
+
+nav ul li {
+     float:left;
+}
+
+     nav ul li a {
+          display:inline-block;
+          height: 34px;
+          color:#dedede;
+          padding: 11px 18px 0 18px;
+     }
+
+     nav ul li a:hover {
+     }
+
+#score-area {
+     float: right;
+}
+
+/******************************************
+/* MAGIC MONITOR
+/*******************************************/
+
+.m-container{
+     /*border-top: 1px solid #dedede;
+     /*display: inline-block;*/
+}
+
+.cursor-active{
+     cursor: url(../images/factory-sm.png), auto;
+}
+
+.hide{
+     display: hidden;
+}
+
+#factoryspace{
+     width: 400px;
+     float: left;
+     max-height: 150px;
+     overflow: scroll;
+     border-right: #dedede;
+}
+
+#factoryPrototype{
+     display: none;
+}
+
+.factory{
+     margin: 5px;
+     border: 1px solid #dedede;
+     padding: 7px 5px 0px; 
+     background: rgba( 255, 255, 255, 0.8 );
+}
+
+.factory span{
+     vertical-align: top;
+}
+
+.factory i{
+     display: none;
+     margin-top: 0px;
+     color: rgba( 199, 83, 32, 0.8 );;
+     float: left;
+}
+
+button{
+     font-size: 12px;
+     padding: 6px 12px;
+     margin-top: 2px;
+     margin-left: 2px;
+     border: none;
+     border-radius: 3px;
+     background: rgba( 0, 0, 0, 0.1 );
+     outline: 0;
+}
+
+.factory-storage{
+     float: right;
+     width: 50px;
+}
+
+.product{
+     height: 3px;
+     width: 3px;
+     background-color: #dedede;
+     display: inline-block;
+     margin: 0px;
+}
+
+.factory-title{
+     font-size: 24px;
+}
+
+.factory-status,
+.send{
+     line-height: 1em;
+}
+
+.clickable{
+     cursor: pointer;
+}
+
+#truckspace{
+     margin-left: 410px;
+     max-height: 150px;
+     overflow: scroll;
+}
+
+.truck{
+     margin: 5px;
+}
+
+/******************************************
+/* PROGRESS BAR STYLES
+/*******************************************/
+
+.ui-progressbar{
+     border: 1px solid #dedede;
+     background: rgba( 255, 255, 255, 0.9 );
+     height: 24px;
+}
+
+.ui-progressbar-value{
+     background: rgba( 199, 83, 32, 0.8 );
+     border: none;
+}
